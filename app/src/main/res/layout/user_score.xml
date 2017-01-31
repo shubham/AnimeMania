@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_weight="0.9"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            style="@style/header_textView"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:clipToPadding="false"
+            android:gravity="start|center"
+            android:layout_margin="5dp"
+            android:elevation="4dp"
+            android:backgroundTint="@android:color/holo_purple"
+            android:backgroundTintMode="src_atop"
+            android:paddingEnd="@dimen/spacing_double"
+            android:paddingStart="@dimen/spacing_normal"
+            android:text="@string/your_score"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/total_score_textView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@android:drawable/screen_background_light_transparent"
+            android:gravity="center"
+            android:text="3"
+            android:textSize="70sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</LinearLayout>

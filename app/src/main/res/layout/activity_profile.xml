@@ -1,0 +1,115 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="9"
+    tools:context=".login.ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/profile_avatar_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/user_name_textView"
+                style="@style/header_textView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/header_height"
+                android:gravity="center|center_horizontal"
+                android:text="@string/user_name"
+                android:typeface="sans"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/name_textView"
+                style="@style/header_textView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/header_height"
+                android:gravity="center|center_horizontal"
+                android:text="@string/name"
+                android:typeface="sans"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/user_score"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/sign_out_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:elevation="4dp"
+            android:background="@android:color/holo_purple"
+            android:text="@string/sign_out"/>
+
+        <Button
+            android:id="@+id/play_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/spacing_micro"
+            android:background="@android:color/holo_purple"
+            android:elevation="4dp"
+            android:padding="5dp"
+            android:text="@string/start_playing"/>
+
+        <Button
+            android:id="@+id/leaderboard_profile_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/spacing_micro"
+            android:background="@android:color/holo_purple"
+            android:elevation="4dp"
+            android:text="@string/leaderboard"/>
+    </LinearLayout>
+
+</LinearLayout>

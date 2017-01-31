@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+    <style name="header_textView" >
+        <item name="android:textColor">@color/header_color</item>
+        <item name="android:textSize">@dimen/header_textSize</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+</resources>

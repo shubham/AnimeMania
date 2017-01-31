@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.shubham.animemania">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".utility.AppContext"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AppLauncherActivity"
+                  android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+
+            android:screenOrientation="portrait"
+            android:name=".leaderboard.LeaderBoardActivity"
+            android:noHistory="false"/>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".login.LoginActivity"
+            android:clearTaskOnLaunch="true"
+            android:noHistory="false">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".login.ProfileActivity"
+            android:noHistory="false"/>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".login.RegisterActivity"
+            android:noHistory="false"/>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".quiz.CategoryActivity"
+            android:noHistory="false"/>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".quiz.QuizActivity"
+            android:noHistory="false"/>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".quiz.ResultActivity"
+            android:noHistory="false"/>
+    </application>
+
+</manifest>

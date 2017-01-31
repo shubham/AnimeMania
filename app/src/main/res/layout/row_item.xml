@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:padding="10dp"
+    android:layout_margin="5dp"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/user_name"
+        android:gravity="center"
+        android:id="@+id/leader_board_user_name_textView"
+        style="@style/header_textView"/>
+    <View
+        android:layout_width="2dp"
+        android:background="@android:color/holo_red_light"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:id="@+id/leader_board_total_score_textView"
+        style="@style/header_textView"
+        android:text="@string/score"/>
+</LinearLayout>

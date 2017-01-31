@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">AnimeMania</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="question">Question</string>
+    <string name="you_are_going_to_startquiz">You are going to StartQuiz</string>
+    <string name="level">Level</string>
+    <string name="option_c">Option C</string>
+    <string name="option_d">Option D</string>
+    <string name="option_b">Option B</string>
+    <string name="option_a">Option A</string>
+    <string name="want_to_go_on_previous_question">want to go on previous question</string>
+    <string name="select_answer">Select Your Answer</string>
+    <string name="select_your_category">Select your Category</string>
+    <string name="anime_mania">Quiz for Anime Lovers</string>
+    <string name="naruto">Naruto</string>
+    <string name="death_note">DeathNote</string>
+    <string name="one_piece">OnePiece</string>
+    <string name="one_punch_man">OnePunchMan</string>
+    <string name="dragonballz">DragonBallZ</string>
+    <string name="start_quiz">Start Quiz</string>
+    <string name="want_to_cancel_the_quiz">want to cancel the quiz</string>
+    <string name="press_to_play_next_level">Play Next Level</string>
+    <string name="home">Home</string>
+    <string name="your_score_out_of">Your Score out of</string>
+    <string name="login">Login</string>
+
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_username">Enter UserName</string>
+    <string name="enter_name">Enter Full Name</string>
+    <string name="your_score">Your Total Score</string>
+    <string name="sign_out">SIGN OUT</string>
+    <string name="click_to_register">Click to Register</string>
+    <string name="want_to_register">Want To Register</string>
+    <string name="register">Register</string>
+    <string name="user_name">User Name</string>
+    <string name="name">Name</string>
+    <string name="start_playing">Play</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="your_rank">Your Rank</string>
+    <string name="leaderboard">LeaderBoard</string>
+    <string name="click_to_see_leaderBoard">Press to See LeaderBoard</string>
+    <string name="score">Score</string>
+    <string name="choose_avatar">Choose an Avatar</string>
+</resources>

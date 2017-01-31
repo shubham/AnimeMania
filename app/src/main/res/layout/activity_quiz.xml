@@ -1,0 +1,184 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".quiz.QuizActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center|start"
+        android:layout_marginStart="@dimen/spacing_normal"
+        android:layout_weight="1"
+        android:gravity="center|start"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/header_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/level"/>
+
+        <TextView
+            android:id="@+id/level_textView"
+            style="@style/header_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_normal"
+            android:text="number"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/spacing_normal"
+        android:layout_weight="1"
+        android:gravity="center|start">
+
+        <TextView
+            style="@style/header_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|start"
+            android:text="@string/question"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/spacing_double"
+        android:layout_weight="3">
+
+        <TextView
+            android:id="@+id/question_textView"
+            style="@style/header_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/header_textView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/spacing_normal"
+            android:layout_weight="1"
+            android:gravity="center|start"
+            android:text="@string/select_answer"/>
+
+        <RadioGroup
+            android:id="@+id/option_radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/spacing_double"
+            android:layout_weight="3"
+            android:weightSum="4">
+
+            <RadioButton
+                android:id="@+id/option_a_radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center|start"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:text="@string/option_a"
+                android:textSize="16sp"
+                />
+
+            <RadioButton
+                android:id="@+id/option_b_radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center|start"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:text="@string/option_b"
+                android:textSize="16sp"
+                />
+
+            <RadioButton
+                android:id="@+id/option_c_radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center|start"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:text="@string/option_c"
+                android:textSize="16sp"
+                />
+
+            <RadioButton
+                android:id="@+id/option_d_radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center|start"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:text="@string/option_d"
+                android:textSize="16sp"
+                />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <TextView
+                style="@style/header_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/score"/>
+
+            <TextView
+                android:id="@+id/score_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/next_fab"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0.1"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:src="@drawable/ic_right"
+            />
+
+    </LinearLayout>
+</LinearLayout>
